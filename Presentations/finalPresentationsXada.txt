@@ -103,4 +103,3 @@ Educational Applications:
 •	Cultural integration makes environmental concepts more accessible and memorable
 These presentations demonstrate innovative approaches to using AI for ecological education and cultural integration, while also revealing important limitations and challenges in current AI-assisted creative processes.
 
-![Uploading image.png…]()
