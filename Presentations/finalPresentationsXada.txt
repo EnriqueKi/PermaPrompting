@@ -112,7 +112,7 @@ Both projects demonstrate clear pedagogical intentions - the pollinator game's s
 
 
 ------
-Project 1: Toilet Theory AI - Pseudo-Intellectual Discourse Generator
+Project 3: Toilet Theory AI - Pseudo-Intellectual Discourse Generator
 Presenter's Journey & Core Ideas:
 The Evolution of Frustration and Discovery: The presenter begins with a tone of honest technical struggle: "And then the initial idea was to kind of train something on these data set spoilers. But then I couldn't really find a way to kind of use them as a training data." There's a palpable sense of having to pivot from an original vision, leading to what becomes a more interesting exploration.
 
@@ -211,5 +211,96 @@ Cultural Critique Through Technical Practice:
 All projects use AI experimentation as a vehicle for broader cultural commentary - whether critiquing academic discourse, analyzing popular culture trends, or questioning anthropocentric approaches to intelligence. The technical work serves philosophical and critical ends rather than purely instrumental ones.
 
 
+-------
+Project 4: Soil Chromatography & Iris Reading Integration
+
+Presenters' Conceptual Framework:
+Dual Diagnostic Systems Introduction: The presenters begin with careful theoretical positioning: "So, now, project, as you know, we've been working with Solve for WebSemarchy, and also, we've come to Diana into a bit of a... Yeah. Yeah. So we've been looking at soil chromatography as a method of understanding the earth and understanding the soil all around us basically."
+
+Parallel Diagnostic Practices: With growing enthusiasm for their conceptual bridge: "At the same time we're intrigued by the idea of iridology, which is like reading the iris and understanding how does that connect to the body. Both are regarded as a diagnostic fact, it's a little bit in between scientific and it's a reading."
+
+Creative Synthesis Goal: "Within the project we tried to bring this together into trying to get this idea of composing all this data into something new, into glyphs, hubs and decay."
+
+Embodied Data Collection: With evident pride in their fieldwork: "You'll hear an underground recording of the soil of the samples that were taken and then now we can probably show the system."
+
+Technical Implementation & Live Demonstration:
+Sample Upload System: "So basically you can upload your sample, and we specifically speak about sample because it can be both an iris or a chromatographic. So it's a sample that's like a soil sample."
+
+Geographic Specificity: With methodical precision: "So these samples they come from all phases in Ghent at different spots throughout a specific zone. And it's like, say, one square cubic meter square. So they have all different kind of areas, but it's still coming from kind of a specific spot within Belgium."
+
+Expert Knowledge Integration: "So we are approaching each two major steps, which will explain the result, and we didn't try this image before. So what we get is like an analysis of this graphical feature. So how also like expert chromatographic graphists would read it. So they would look into the dots, which I didn't do, but, like, chromatographic square-like results."
+
+Scientific Reading Methodology: With detailed technical explanation: "So basically, the samples can be definitely read, so for instance the spikes, the colors, the channels, they all have to do with how the soil, how healthy it is, or unhealthy, how much minerals are in the soil, how much nutrients."
+
+Theoretical Grounding: "It also relates to this idea of what Gunnar Heireweg said, like soil contains worlds within worlds, and all these different elements."
+
+AI Integration Process:
+Academic Paper Translation: With honest admission of limitations: "And yet it's actually nice, like the proper scientific analysis we did, we found an actual paper, which was like three pages long, not too long, but it had, we were hoping that they were also sharing their colors, because they were described in algorithm, but they didn't. They just had horrible mathematical formulas inside the paper, which we both didn't understand."
+
+AI as Translation Tool: "But we knew that there is some information, and so we gave this into Claude to transform this into pie controls. And this actually worked."
+
+Polar Transformation Technique: With technical enthusiasm: "And the first step was to take the image and then project it into this is kind of interesting, it's kind of spying or something, so it would, on the axis you would have the angles, and then you would basically read the image in a regular way, and then use different segmentation to work with the kinds of layers."
+
+Feature Extraction: "And there are like a couple of different algorithms, some are very slow, and then get like the goals with features, with other features, to see the main color, or the thickness. Yeah, thickness, radius, spikes as well."
+
+Live Iris Demonstration:
+Real-Time Testing: With experimental excitement: "So, here we are trying to say, as an image of an iris, and it's trying to do the polar transformation, but it also does not have the center right, but it's quite... And then it's also been messed up, but maybe if you make a sharper image outside a new iris, it's going to be a little bit more visible."
+
+Language Decomposition Concept: "So, the last part, basically, it takes the inputted data, and then we created a prompt that kind of based on the health of the soil, it has different layers of communicating that back to us. So, it's again decomposing the language in a way."
+
+Health-Language Correlation: With philosophical depth: "So, the idea is that in this more parallel way, you can also re-read data, and you can see that basically it has, for instance, for more healthy soil, I think, is more composed sentences, and then the words, the quality of the soil sample, or the sample that you put in is much more diatribic and unreadable, also. It's kind of pop-up-y fragmented reading it becomes."
+
+Bidirectional Analysis:
+Reverse Methodology: "And we can show you some more pictures of the results, because we had a couple of ideas, and at one point we thought, let's turn it around and let's look at how actual irises are interpreted, which is... This is the iridology kind of way of interpreting an iris."
+
+Cross-System Application: "And also we even tried to do this the other way around, we also have a screenshot of that, where we did the same methodology, taking a research paper, and then trying to... What's the other one? Ah, yeah, you cannot see it so well, but you see that there is like lungs and kidneys, so we just tried the same thing, but then from the other way around, basically."
+
+Anatomical Mapping: "Yeah, so here, basically, this is the way it could work, here, kind of the analysis somewhat-ish, and then if you zoom out a little bit, you can see here the scores, the heart, the lung, the liver, and also the structural, like, energetic equation, or suppress something else."
+
+Audience Engagement & Critical Reception:
+Enthusiastic Praise from Audience Member: "Yeah, this is fantastic. Like, I have to congratulate, you know, the guys who came in the end. I'm so impressed by what you guys did. And especially the way you reversed it, you know, into how the soil is looking at us, in a way, when you can our irises, and you're masking them in this way, the way you work with the language, the end of the comments, you are distributing this around the... You don't know where they come from, who speaks, who moves. That's totally broad, that anthropocentric drama that we have in question."
+
+Artistic Recognition: "So, maybe it's like an art project, you can go with this and exhibit it anywhere now, yeah? Because it's also impressive that you were able, in such a short time, to create something of substance."
+
+Critical Self-Reflection from Presenter: "But, didn't you think it's a bit kitsch? What's this about? Like, this whole, oh, it's the iris breathing and the soil. Like, first, when I had this idea, I thought, like, oh, I would never do that. That's too kitsch."
+
+Audience Member's Reassurance: "But, yeah, it also brings it together. That's why we didn't want to have it too much like, especially also because it's a challenge of the language a bit... But here people will not see, will not believe, oh, like, I'm this soil, this means something really bad. But they will think also about how the AI can trick us, because it can give us interpretations like that. But we were still curious, like, you know, you will give astrology or something, so it's then, it's okay, I think."
+
+Technical Discussion & Future Directions:
+AI Control vs. Scientific Rigor: "I think what we want to do is that, like, we realize that what we actually have control over was the AI or the OT... It was the search between, like, finding it, basically, throwing it into and how much data can we actually extract before doing something with it, because I think that's also the kind of one to walk with if you're working with, like, ecological data, if it becomes too quickly and narratively could be a bit problematic."
+
+Text Generation Mechanics: Audience Question: "So, there is objective and scientific interpretation and then some of you have this voice emerging, like judging you basically as if you were a soil. So, like some of the questions of who is speaking, generally, is that the same as well? How do you get to generating this text?"
+
+Presenter's Explanation: "So, this is the... Like the parable, you had a... The normal font, which was just maybe the data coming out of the metal grid and then the generation is color-centric interpretation. Then you get this color-centric interpretation... If you know... How do you know what kind of... If the health would or not, and then basically it aligns with this font again."
+
+Comic Culture Integration: Audience Observation: "Also, this how it's been composed, not in a bubble, but in comics, you added something interesting from that comic culture that makes these non-human, speaking patterns. I think that it would pop up into that kind of like a character and parallel."
+
+Interactive Break & Playful Experimentation:
+Live Iris Testing Invitation: "And so we invite you to take a picture of your own iris, or for example, and then we can achieve that afterwards. We send it to... on Telegram, and then we can... You can send it, if you have an image of the iris in your phone, send it to us now. We can do it live."
+
+Spontaneous Experimentation: The session takes a playful turn as participants begin experimenting with different body parts for analysis, leading to laughter and spontaneous testing of the system's boundaries. The presenters maintain good humor while navigating the unexpected directions of audience engagement.
+
+Community Building Moment: "Maybe this is a good moment, also, to take a little break, because we can go for 10 minutes, and we can take a little break, but also, if people want to meet their photos on the air, now we have the space, also."
+
+Cross-Project Themes & Community Dynamics:
+Experimental Vulnerability:
+The presenters demonstrate remarkable openness to live experimentation and potential failure, with the iris analysis being tested in real-time without prior knowledge of results. This vulnerability creates authentic engagement and community trust.
+
+Interdisciplinary Bridge-Building:
+The project successfully bridges multiple knowledge systems - soil science, iridology, AI interpretation, and artistic practice - without claiming authority in any single domain while respecting the complexity of each.
+
+Critical Self-Awareness:
+The presenters' honest discussion of the "kitsch" potential of their work demonstrates sophisticated critical thinking about their own practice, while the audience's supportive response suggests a community that values experimental risk-taking.
+
+Technical Innovation Through Constraint:
+The project's success emerges from working within limitations - incomprehensible mathematical formulas become opportunities for AI translation, technical constraints become creative parameters for language generation.
+
+Playful Serious Research:
+The session demonstrates how rigorous technical and conceptual work can coexist with humor, spontaneity, and community play, suggesting alternative models for academic and artistic research presentation.
+
+The project represents a sophisticated integration of scientific methodology, artistic practice, and AI experimentation, while maintaining critical awareness of its own limitations and potential interpretive dangers.
+
+
+-----
 
 
