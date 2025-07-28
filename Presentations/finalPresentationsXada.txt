@@ -1,114 +1,214 @@
-Permaprompting Summer School: Project Presentations Summary
-
-
 Project 1: Pollinator Garden Simulation Game
 
+Presenter's Vision & Technical Framework:
+Historical Foundation with Modern Purpose: The presenter begins with a sense of connecting across time: "In Middle Ages it was used for dealing with some disease for example. We used artificial intelligence to recognize the old plants and calculate attractiveness for pollinators." There's reverence in how they bridge medieval plant knowledge with contemporary AI, suggesting this isn't just technical novelty but cultural continuity.
 
-Core Concept: AI-Powered Ecological Gaming
-Historical Integration + Modern Technology:
-•	Medieval Plant Knowledge: Using historical data about plants used for disease treatment in Middle Ages
-•	AI Plant Recognition: Artificial intelligence system to identify old/historical plants
-•	Pollinator Attractiveness Calculation: AI calculates which plants are most attractive to pollinators
-Interactive Gameplay Mechanics:
-Visual & Audio Feedback System:
-•	Dynamic Plant Movement: Play-dots and leaves move around plants based on attractiveness calculations
-•	Pollinator Behavior: Bees and other pollinators choose plants based on AI calculations
-•	Population Dynamics: Number of pollinators increases when they like planted species
-•	Musical Integration: Volume of soundtrack increases with pollinator population
-•	Harmony Concept: Creating "symphony between us and them" through conscious planting choices
-Educational Goals:
-Consciousness Raising:
-•	Beyond Aesthetics: Moving from planting "pretty" things to considering broader ecological benefits
-•	Systemic Thinking: Understanding impact on larger biotopes and ecosystems
-•	Pollinator-Centered Design: Prioritizing pollinator needs over human preferences
-Technical Implementation:
-Data Structure:
-•	JSON Plant Descriptions: Each plant has attributes including water accumulation, insect effectiveness, etc.
-•	Comprehensive Database: Rich information source driving all calculations and interactions
-•	Agent Potential: Could develop into gardening advisor agent for pollinator-friendly garden design
-Planned Features (Not Yet Implemented):
-•	Invasive Species Management: Originally planned to include invasive species removal gameplay
-•	Varied Environments: Different soil topographies and plant size options
-•	Educational Applications: Suitable for scratch programming and children's education
-Development Challenges:
-•	Complexity: Invasive species feature proved too complicated and time-consuming
-•	Scope Management: Focused on core concept rather than expanding features
-•	Sound Design: Evolved from "dramatic" Bumblebee music to more "romantic" soundtrack
- 
+The Science Behind the Magic: With evident pride in their technical achievement: "So that's the science of the game." The presenter demonstrates their interface with tactile engagement: "I can choose a bar. Ah, yeah, the sound. I can feel it. That's very cool."
 
+Dynamic Ecosystem Visualization: The presenter's excitement builds as they describe the system's responsiveness: "So, the play-dots and the leaves are moving around the plants and they can calculate which one is more attractive. Yeah. And as you go planting more plants or flowers, you see the reaction of bees and lily-birds and pollinators. Some of them choose to go to them. Sometimes if they like the plant, the number of pollinators increases in the garden."
+
+Musical Harmony as Ecological Metaphor: With philosophical depth: "And as the number of pollinators increases, the number of the music or the volume of the soundtrack also increases. So, we wanted to suddenly show that it brings kind of harmony or symphony between us and them." The presenter's voice carries conviction about this aesthetic choice representing deeper ecological relationships.
+
+Consciousness-Raising Through Play: The presenter articulates their pedagogical goal with growing passion: "If you are more conscious about not just planting things that are kind of pretty and they have some benefit to us versus what could be the bigger picture of the benefit to larger biotimes of plants." There's clear intention to shift human-centered thinking toward ecological awareness.
+
+Future Possibilities with Present Limitations: With honest assessment: "That is the tiny simulation that we made. We can have bigger plants, but also short-time, slow-credits. That's the first step. Yes. And also you can have new plants and different soil topographies and whatnot. But, yeah. But for now, it's a concept. It's a concept we try to explain."
+
+Audience Engagement & Technical Inquiry:
+Data Structure Question (from technically curious audience member): "If you evaluate the plants, so you have your data set, you run it through what? You said you run it to recognize the plants and give you the..."
+
+Presenter's Detailed Technical Response: With clear expertise: "Yeah. The result also a structural information JSON describing each plant with some attributes, like water accumulation, effectiveness for insect, and so on. So, there is a lot of information. So, it was a data source for all this. And then the program will calculate movement and these attributes, so it runs."
+
+Practical Application Vision: The presenter expands on potential real-world use: "But potentially you have an agent for gardeners and basically people that want to make like friendly, pollinator-friendly garden, someone who can give you like, you know, this combination of plants will increase or whatever. Yeah. Combination. Kind of."
+
+Enthusiastic Audience Reception (with repetitive affirmation suggesting genuine excitement): "It's kind of cute. Yeah. So, it's a good idea. Yeah. So, it's a good idea. Yeah. So, it's a good idea..." [The repetition in the transcript suggests either technical recording issues or genuine enthusiasm being expressed by multiple audience members]
+
+Invasive Species Complexity: Audience Question about Experience: "So, you guys have a gardener-like experience and you had to, like, do you have any experience with gardeners?"
+
+Presenter's Honest Admission of Scope Challenges: "And we also had invasive species. So, initially our. Initially our wish was to, like, populate a part of the garden with invasive species of plants. And then as a user you would have to remove them and replace them with the more beneficial ones. But that got really complicated and it was time consuming as well. So, it was a very complicated process."
+
+Sound Design Evolution: Audience Appreciation: "It's very cute. I like the sound also. This interaction we made with the sound. The music and the kind of cute game."
+
+Presenter's Creative Process: "We started with the life of Bumblebee, but it was too dramatic. The music is more romantic."
+
+Educational Applications: Audience Question about Children: "I want to ask you, what about your kids? You're teaching kids in school. Would it be something you can imagine the kids liking or not?"
+
+Presenter's Pedagogical Vision: "Yeah, I think this activity is suitable for scratch programming. I think it's a very good idea. Also for children. To learn. The sounds and animations."
+
+Technical Tools Inquiry: Audience Question: "Yeah, I want to ask, which language model did you not use?"
+
+Presenter's Humble Response: "Hmm... I guess we used all the names we knew. Maybe... I mean, we didn't use the ones we didn't know. So..."
+
+Future Directions Uncertainty: Audience: "Where did you go from here?" Presenter: "I haven't made a plan, but I heard invasive species somewhere at the end."
 
 Project 2: Invasive Species Cultural Integration Through Prague Legends
+Presenter's Conceptual Journey:
+Technical Approach Clarification: The presenter begins with technical honesty: "Guys, so... We didn't make any agent. It's all done by using just cloth and then some other stuff. Sora in GVP and then... And then we just blended it."
 
+Urban Ecology as Starting Point: With analytical precision: "But it's like we had the idea that we... We started the discussion that when the city is this constant flow, and it's a constant flow of goods from all around the world, and it's connected that there are more and more invasive species spreading all around, like from different places. To like unwanted places. So, we started from this."
 
-Conceptual Framework: Cultural Naturalization
-Core Research Question:
-•	Temporal Integration: How many generations needed for invasive species to become "citizens"?
-•	Cultural Acceptance: How can invasive species be integrated into local culture?
-•	Historical Precedent: When do invasive species become accepted as "domestic"?
-Methodology: AI-Powered Legend Creation
-Data Sources:
-•	Invasive Species Database: Scientific information about non-native species in Prague area
-•	Prague Legends Database: Historical stories and folklore from Prague's cultural heritage
-AI Process (Using Claude):
-1.	Species Research: AI analyzes invasive species characteristics and habitat information
-2.	Legend Matching: AI identifies most suitable traditional legends for blending
-3.	Story Generation: Creates new hybrid legends integrating invasive species into cultural narratives
-4.	Storyboard Creation: Visual planning for video production
-Production Pipeline:
-Multi-Modal Output:
-•	Story Generation: Claude creates hybrid legends
-•	Visual Production: Sora generates video content (with mixed results)
-•	Audio Integration: Text-to-speech narration of legends
-•	Video Editing: Combining all elements into final presentations
-Sample Output: "The 14 Healing Spires" Legend
-Narrative Structure:
-•	Historical Setting: Medieval Prague monastery with failing medicinal gardens
-•	Divine Intervention: Vision of 14 towering flower spires sent from "lands beyond great waters"
-•	Miraculous Healing: Foreign seeds (invasive species) restore soil fertility and garden productivity
-•	Unintended Consequences: Plants spread beyond control, disrupting native ecosystems
-•	Wisdom Integration: Understanding that "powerful gifts carry greatest responsibility"
-Cultural Integration Elements:
-•	Religious Framework: Integration with 14 Holy Helpers Catholic tradition
-•	Local Geography: Specific Prague locations (St. Stephen's Church, monastery gardens)
-•	Ecological Realism: Accurate description of invasive species characteristics (nitrogen-fixing, rapid spread)
-•	Contemporary Connection: Modern scientific names alongside traditional "healing spires" designation
-Technical Challenges & Limitations:
-AI Generation Issues:
-•	Visual Quality: Sora-generated videos described as "terrible" and "awful"
-•	Limited Control: Automated process provided no intervention opportunities
-•	Time Constraints: Insufficient time for prompt refinement and iteration
-•	Creator Frustration: Difficulty accepting lack of control over visual outcomes
-Process Insights:
-•	Story Quality: Text generation (Claude) produced "quite good" narratives without adjustment
-•	Visual Limitations: Video generation requires more time and prompt engineering
-•	Automation Trade-offs: Fully automated agent approach sacrifices quality control
-Project Outcomes:
-Completed Elements:
-•	Three Stories: Multiple invasive species integrated into Prague legends (one fish, two plants)
-•	Cultural Framework: Method for naturalizing invasive species through storytelling
-•	Process Documentation: Clear pipeline for AI-assisted cultural integration
-Unrealized Potential:
-•	Interactive Agent: Originally planned comprehensive agent for location-based species recommendations
-•	Quality Refinement: Visual outputs need significant improvement for public presentation
-•	Expanded Coverage: More species and legends could be integrated with additional time
-Cross-Project Themes & Insights:
-AI as Cultural Mediator:
-•	Both projects use AI to bridge different knowledge systems (historical/contemporary, scientific/cultural)
-•	Technology serves educational and consciousness-raising goals rather than purely technical objectives
-•	AI enables new forms of storytelling and ecological awareness
+Localization Strategy: "But then we were like, okay, we should do it in Prague to make it more local. Then... So, we didn't know what to do. The idea was, okay, invasive species, it's so interesting topic, but what should we actually do?"
+
+The Citizenship Question: The presenter articulates their core theoretical insight with growing excitement: "So, the discussion was also that... Like... From which I think it came to the market. Like when it actually happened that invasive species become like local or domestic. How many generations you need to become like really taken as a citizen."
+
+Cultural Integration Strategy: With clear methodological vision: "So, we wanted somehow domestic... Not domestic. Make them to be accepted into culture. So, we took the old Prague legend. And we blended them with description of invasive species to create a new legend. Which would make somehow this invasive species to be integrated into culture. Like through this old legend."
+
+AI-Assisted Research Process: The presenter details their systematic approach: "So, for this we find the database. Check database of invasive species. We took this, we put it to Claude. Let him to find the character. And like research the species. We gave him the maps from this database. And then we had another database. It was the database of old Prague legends."
+
+Iterative Legend Matching: "So, I put like... Always like... First we found easily. Too much. But then we tried like I put more legends to Claude. And I told him we have this plant. And find the legend which is most suitable to blend."
+
+Creative Output Limitations: With realistic assessment: "So, we have like three stories. Of different... One fish. Actually two plants. We wanted to have more but we couldn't make it."
+
+Production Pipeline: "And then we made... In Claude we made a storyboard. And we generated Sora. And then this... And then we put the legend into the text voice. And let it speak. And then this... And then edit it to video. So, it's quite long story."
+
+Original Agent Vision: Co-presenter adds context: "I will just add one thing. Because we... Firstly we were thinking about making the actual agent. But have the... The... Like the whole list of the invasive species. And it can ask you as a user... Hey, what... Where are you? Where are you first of all? Because we had some maps. And then... It would ask which kind of a... Creature it... It wanted to kind of interact."
+
+Quality Control Challenges: With honest self-assessment: "But then we realized. As you will see here. That some of these... Legends or realizations are not that great... So we thought. Okay. Let's just stop here. And you can judge in a second."
+
+Visual Generation Struggles: "Yeah. Actually with Enrique we were generating... In Sora... The results are so terrible for this. Because you would really need to take more time... To adjust the prompts. For Sora, to get something nice."
+
+Automation vs. Control Tension: With philosophical reflection: "But it was generated by Claude. And we want it... Because we just wanted this process to be. The automatize, like how it would agent do it. So they pretty much wanted to intervene. But from our point it's like... Yeah, it looks so awful... This is a feeling like okay if you make the agent to do all of this automatically and you don't have any control over the visual outcome and yeah it's kind of unpleasant for for i think the creator to accept it."
+
+Story Quality Assessment: "But I think he chose the best one the stories are actually good i think kind of good without without any adjustment yeah they are quite good but the visuals but maybe we can control it probably."
+
+The Generated Legend: "The 14 Healing Spires"
+The presenter shares their AI-generated story with evident pride despite visual limitations:
+
+Medieval Setting & Crisis: "When Carlo Bonamessi was still called David Martin there lived a monastery gardener named Oslob Zarani who tended the Europe gardens of Saint Stephen's church those skilled in his craft he fixed a crisis that threatened all of frog's killing conditions the barren earth the monastery's sacred earth gardener which provided medicines for frogs poor and sick had begun to fail mysteriously the soil itself seemed cursed nothing would grow properly and even the heartiest medicinal plants refused to improve."
+
+Desperate Prayer & Divine Vision: "The desperate prayer one winter evening in Saint Stephen's temple surrounded by carved images of the first Saint Stephen's temple the spirit of the fourteen holy helpers Boslow poured out his desperation into prayer holy mother i have served faithfully with my hands in here the love of soil rejects all cultivation if there is any power in heaven that can heal the earth itself i beg for the intercession of your 14 helpers."
+
+The Miraculous Solution: "That night basal experienced a vision of magnificent gardens where 14 towering spires of flowers rose toward heaven each taller than man and crowned with deep purple blue blossoms arranged in perfect vertical towers a divine voice spoke these are the 14 healing spires sent from the lands beyond the great waters to heal the wounds in your earth each spire carries the power to transform soil into something richer than before."
+
+Ecological Transformation: "From the foreign seeds grew elegant plants with hand-shaped leaves and magnificent spires of blue-purple flowers reaching skyward, like Gothic cathedral towers. Most wonderfully, wherever these plants grew, the soil beneath became dark, rich, and fertile. The plants seemed to feed the earth rather than the plebe, and the monasteries or gardens experienced its most abundant harvest in decades."
+
+Unintended Consequences: "But as decades passed, the miracle's nature changed. The healing spires, blessed with supernatural fertility, began spreading beyond human control. They appeared in ancient meadows, crowding out native flowers that had grown there for centuries. Their gift of soil enrichment applied too widely. Overwhelmed native plants adapted to the world."
+
+Contemporary Reflection: "Osloff's miraculous plants bloom throughout the Czech landscape, their tall blue-purple spires rising like natural cathedrals. Scientists call them luminous polyphyllis and speak of their nitrogen-fixing abilities and ecological impact. But elderly gardeners near Prague's old churches sometimes remember the older name, the 14 healing spires. They tend these plants with gratitude and caution, understanding that the most powerful gifts carry the greatest responsibility."
+
+Audience Response & Technical Challenges:
+Audience Appreciation: "Beautiful."
+
+Technical Limitations Discussion: Audience Question: "But why was the video, you're repeating the same thing?"
+
+Presenter's Honest Explanation: "Because you couldn't do it. Yeah. Yeah. Yeah. Because it generates 10 seconds only. We didn't want to do anything else. Because if it should be generated by agent, there wouldn't be anyone to... Yeah. No intervention."
+
+Project Summary: "So that's how we try to make the major species a part of the historical legend, to integrate the medium culture. We have more stories, but only in the world, like without the big things. Later on, we'll make a separate story."
+
+Cross-Project Dialogue & Emerging Themes:
 Ecological Consciousness Through Technology:
-•	Project 1: Gaming mechanics promote pollinator-centered thinking
-•	Project 2: Storytelling creates cultural space for accepting ecological complexity
-•	Both challenge anthropocentric approaches to environmental management
-Process vs. Product Tensions:
-•	Both projects encountered challenges balancing automated AI processes with creative control
-•	Quality concerns when fully automating creative outputs
-•	Need for human intervention and refinement in AI-assisted creative work
-Educational Applications:
-•	Strong potential for both projects in educational contexts
-•	Interactive elements engage users in ecological thinking
-•	Cultural integration makes environmental concepts more accessible and memorable
-These presentations demonstrate innovative approaches to using AI for ecological education and cultural integration, while also revealing important limitations and challenges in current AI-assisted creative processes.
+Both projects demonstrate sophisticated approaches to using AI for environmental education and awareness. The pollinator game presenter's vision of creating "harmony or symphony between us and them" resonates with the legend project's exploration of how invasive species might be culturally integrated rather than simply rejected.
+
+Technical Limitations as Creative Constraints:
+Both presentations honestly address technical challenges - from the complexity of invasive species gameplay to the limitations of AI video generation. The presenters frame these not as failures but as part of the creative process, with the legend project presenter particularly articulate about the tension between automation and creative control.
+
+Cultural Integration vs. Technical Innovation:
+The legend project's focus on cultural naturalization of invasive species offers a compelling counterpoint to purely technical approaches. The presenter's insight about "how many generations you need to become like really taken as a citizen" reveals sophisticated thinking about belonging, time, and cultural acceptance.
+
+Audience as Collaborative Community:
+The audience consistently engages with both technical details and broader conceptual frameworks, suggesting a community of practice where experimental approaches are valued and supported. The repetitive affirmations in the pollinator project and the appreciative "Beautiful" response to the legend story indicate genuine engagement rather than polite reception.
+
+Educational Vision:
+Both projects demonstrate clear pedagogical intentions - the pollinator game's suitability for children's programming education and the legend project's cultural integration work. The presenters see their technical experiments as serving broader educational and consciousness-raising goals rather than purely artistic or technical ends.
+
+
+------
+Project 1: Toilet Theory AI - Pseudo-Intellectual Discourse Generator
+Presenter's Journey & Core Ideas:
+The Evolution of Frustration and Discovery: The presenter begins with a tone of honest technical struggle: "And then the initial idea was to kind of train something on these data set spoilers. But then I couldn't really find a way to kind of use them as a training data." There's a palpable sense of having to pivot from an original vision, leading to what becomes a more interesting exploration.
+
+Machine Vision as Alien Perspective: With genuine curiosity, they explain their shift: "So then I wanted to apply objective action to these spoilers images to see what machine vision kind of sees. Maybe something that I cannot see." The fascination is evident as they describe the AI's misperceptions: "It kind of seems to me like, you know, kind of like a book as well, there's a car, a toilet, a thing. Of course there is no toilet. I cannot seem to recognize it as a toilet." There's almost delight in these failures - the presenter seems to find the AI's mistakes more revealing than its successes.
+
+Iterative Dissatisfaction Leading to Breakthrough: The presenter's creative process is marked by persistent dissatisfaction driving innovation: "This was kind of interesting, but I wasn't really satisfied. I thought, okay, what am I going to introduce next?" This leads to adding BLIP: "And then I introduced Blip to it and it started to create these little descriptions of what it sees. Okay. It was a little bit more interesting. But I wasn't really satisfied with the book."
+
+Theoretical Synthesis Moment: The breakthrough comes from connecting technical experimentation with cultural theory: "So then our discussion around these kind of like the theory of toilets came to my mind. I did discuss with the text of Žižek on the ideology of toilets. And we talked about the movie Perfect Days." The presenter methodically describes their research compilation: "I took like a Wikipedia page of Perfect Days and Toilet Guard. And I looked at the ideas remarked on the ideology of toilets. And also there is an author called, a scholar called Tim Geiser who wrote a paper on public toilets in China."
+
+The "Pseudo-Intellectual Deposition": With self-aware humor, they describe their final creation: "So it's quite incoherent, that's why I called it pseudo-intellectual deposition. I think it's kind of inhibits something, an image that I actually took, but in the end it just creates like an unsensical piece of writing."
+
+Sample Generated Text (delivered with bemused fascination): "These perceptions are perceived in such an intimate way through both human and animal behavior. Their location is affected by external, such that sunlight catches up to its negative momentum. These observations generate distinctively different attitudes towards unpleasant feelings, which are stimuli... The special order underlying each characteristic has been exemplified differently amongst us all the time, but we nonetheless recognize how fundamentalization can be when considered pragmatically from three perspectives. First, environmentalism. And second, epistemological theory about intuitive consumption, and there is no third perspective there."
+
+Philosophy of Serendipitous Meaning: The presenter articulates a nuanced understanding of AI creativity: "My experience was also quite interesting because when you think of your text it's definitely only a tiny bit attached to the input image. It kind of relates to it but it's quite detached in terms of if you're trying to find a meaning in the text. And maybe like 99% of the time there is no meaning at all. But sometimes you get lucky, and right words come to each other. And then there is this weird we were talking about the serendipity, right? And there comes this serendipity this meaning emerges that neither I or the model intends to create that."
+
+Audience Engagement & Questions:
+Practical Future Directions: When asked about next steps, the presenter shows refreshing honesty: "I don't know what's next, to be honest. Do you have any suggestions?"
+
+Audience Member's Suggestion (with playful creativity): "The static image is tired. It needs to start generating images. How would the fireworks on Mars look like?"
+
+Presenter's Openness: "That's a good idea. I might mention that in a better..."
+
+Extended Audience Commentary (delivered with growing enthusiasm): An audience member offers a deeply thoughtful interpretation: "I have a half-cooked thought. I've been growing this base throughout this conversation. It came from the time that I was working a little bit with architects that they came up with images that they would use their models in order for later a software to be able to place the artifacts that they were modeling... I think this is super interesting because it's not about what it shows. It's not that you want to generate a toilet because it doesn't have the same way that all these people are. I think it's a very humanitarian arc. You're building a data set that is meant to show something that I don't think AI is that worthy to get. Because it's this combination of a sample, a few more, the stories that were on the toilet, the how their things are, it's not about the quality of the material. It's about the stories that we can make once we see them."
+
+Telephone Game Concept: Another audience member suggests: "Maybe you could take this text which you get as a prompt and generate a picture of it... It's a telephone game, basically. You know, like you whisper to someone and I think it's degradation of prompt to image to prompt."
+
+The presenter responds with intrigue: "So in the Python file there is a telephone game. You have how to connect the text to image then you have something watching the image creating a prompt generating an image and it's interesting how it debud[ates] over a few seconds."
+
+Project 2: Volcanic AI Pop Culture Integration
+Presenter's Cultural Analysis & Personal Journey:
+Setting the Cultural Context: The presenter begins with a complex cultural observation, speaking with the passion of someone deeply embedded in contemporary discourse: "Of course, the communication between all these titans and the agents and also coming in today as an architect to just make the whole thing functional, but also, I would say, very feral in the background. It was definitely the feral moment."
+
+Recession Core vs. Fun Aesthetics: With analytical precision, they dissect contemporary cultural tensions: "But then we were talking a lot today about the recession indicators, for example, and how in middle of the council we see all these signs that are kind of about how this culture is continuing to excel and becoming something that it was not supposed to be from the beginning."
+
+Social Media Cultural Absorption: The presenter's voice carries both fascination and critique: "I think it's very interesting to see how the social media is kind of absorbing all this new discourse on having on one hand something that is kind of like this recession core and depression core and also how everything is becoming gray and beige and how all millennials have gray houses and then beige houses. And then on the other hand, there is this desire to have things that are fun."
+
+Queer Culture Appropriation Analysis: With nuanced understanding of cultural dynamics: "And very much influenced by also the queer culture being in immersed into like mainstream culture and then being appropriated and how also like this dialogue is happening."
+
+Volcanic Metaphor Development: The presenter's excitement builds as they describe their creative breakthrough: "And I think that like these also the volcanoes, they really like through the proms and AI, they really become these like canned figures that are like about this like excess of like creating this drama and then like, um, yeah, and also, kind of, kind of, kind of, not, not being in line with like these, these, um, kind of like I would say like sterilizing, sterilizing, like making houses and things."
+
+Personal Liberation Narrative: With evident pride and self-awareness: "So I, for me it was also important that I, um, liberated myself enough to start working in Python and then also liberated myself enough to make a pop song. Like, you know, like post-dream."
+
+Intellectual Permission-Giving: Addressing academic hierarchies with defiance: "And also kind of this idea of, do we, how do we engage with popular culture that this is only person that maybe has some kind of like connotation that is not like the practice of the state, that is not intellectual enough. So this is also something that I think what's trying to bring in some, in some way and it's just also fun."
+
+Technical Challenges & Audience Support:
+Geopolitical AI Access Issues: The presenter expresses frustration with technical limitations: "Because I think that's also going out of the geopolitics. That's another way. Yes, you have this thing that is a great competition with models that are already for the American industry. But of course, when you were trying to look for Suno or the American companies that are already doing super good text to music translation, there is nothing out there."
+
+API Reliability Problems: With evident exasperation: "Even since they promised API, I mean, yesterday was fine, but the whole day passed into. API. Even paying one great guy is not working. It's just..."
+
+Audience Recognition & Encouragement: An audience member offers genuine appreciation: "I have to say, I was really impressed by the prompts. The woman knows how to make prompts with a G. You got out of Dali. That was really good. Not so easy. I have to give you a compliment. I was very impressed by that."
+
+Collaborative Problem-Solving: The audience engages with the technical challenges: "What didn't happen here, we didn't connect completely with the time of the day. So, there is a way to really introduce people in the day when they make a project to create a radio station."
+
+Project 3: Slime Mold AI Mediation
+Presenter's Conceptual Framework:
+Introducing the Alien Intelligence: The presenter begins with wonder and precision: "OK, so our project, it's called it's a speckled before. We don't really have on as a point, but it's more about the research and development process of this idea that we have. So the last set was blind notes, which as you probably know at this point, there are sort of these alien creatures that live on earth. They're not animals, they're not fungi, they're not plants, they are just a particular structure and a particular way to create these shapes and applications."
+
+AI as Interspecies Mediator: With theoretical sophistication: "So why mediation? Because the idea was to think about AI agents as a new species information system, IIS. So what's the function of AI in this context? We were thinking about interstitialization and how we can use the agent as a sort of mediator in the mediation process."
+
+Beyond Logocentrism: The presenter articulates a crucial methodological shift: "And the idea after this was, but why be so logocentric? Because in the end, these people are, they cannot vote. So it's the story, we try to think out of 100% exactly... So we went in a different direction later. And we thought about how these features and bodies of communication are intelligent. And the way to do it is more, the way to do it is more physical."
+
+Motion Detection Approach: With technical enthusiasm: "So AI in the next step has been used for a new state that we call mobile, which is motion detection."
+
+Technical Exploration Challenges: The presenter honestly addresses limitations: "We are exploring these scientific AI softwares that are designed for movement research and analysis. So I was trying to, yeah, find them. But it runs locally. And it's not easy to set them up. But I had some Python libraries, code names, compilers and stuff. So it's more like exploration than like, that we would have some kind of level."
+
+Perspective Reversal Innovation: With creative excitement: "And after that, we try to think, after movement, we try to think, okay, let's reverse the perspective. So instead of asking AI to mediate, we can sort of upload the climate directly to the virtual environment."
+
+ComfyUI Implementation: Co-presenter explains technical details: "This is like a simple workflow in ComfyUI that creates three models from images. And you can upload them. Yeah. And then you can see the parameters, how much you want to be like following the image, how fast it should be. And it's kind of interesting to explore."
+
+Rich Audience Engagement:
+Fundamental Question About Agency: An audience member probes deeply: "Luca, I was very interested in asking you why do you think you're going to make an agent? Like what if we see from this, you know, the three ideas?"
+
+Presenter's Honest Response: "No, I mean, the agent exists, but it's still not developing in the process. Right. We don't have the final result. It's a whole cloud in that sense."
+
+Audience Member's Expansive Inquiry (delivered with growing intellectual excitement): "What is really interesting here is more than, so it's interesting to people that kind of focus more on technology. You've been speaking about the questions that you're raising, and also I don't want to get too just to speak. I want to think whether there are some other sources of data about this growth, or even deep thoughts about these shapes. What does that say? And we know what it says in the scientific literature, but were you thinking much further? How would you interpret it? And what would you do with the growth of this line? What would that do? And what would you use? Because it is actually very cool, this weird, sculptural, you know, artistic rendering of mold. Did you guys speculate further? Because that's really nice about your practice. You kind of spend more time speculating what it could be."
+
+Presenter's Thoughtful Response: "Yeah. I think that could produce more data sets for the next interaction around, I think, if we are practicing the whole machine process of the animal, it could definitely be more interesting. Yeah. I think that could be produced in the kind of that type of specific language. Yeah. And which could be used in the project."
+
+Audience Member's Neural Network Connection (with evident excitement): "Yeah, I think you're also discussing how the mold is translated into programming code like inside a mobile computer in a way. I think it's brilliant because when I look at this, I'm thinking exactly about the moment. We talked about the neural network, which is the way the AI is organized and how the slime networks work. How is that? Because it's very small, yeah? And we could do like a very different way of processing the data."
+
+Methodological Insight from Audience (delivered with academic precision): "I think many of the, or most of the projects of the slime mode take a top-down approach. And the fascinations with how they adapt to certain patterns that are happening on a surface that is usually black. But when I see this, like, I would actually be super interested in following the slime mode in the very physical dimension as a kind of... more like growing... I think. I never thought I would define anything in three dimensions. I always thought I was black."
+
+Technical Application Question (from experienced practitioner): "So I have a question. A lot of what you are doing is object detection and image processing in the dumb AI. So have you explored, connect and see how it does object detection? It's used for gaming, but it is much bigger than that. I have done a few projects on Microsoft HoloLens, which, in my case, it is a factory automation. Forget about the use case."
+
+Cross-Project Dialogue & Emerging Themes:
+Shared Experimental Ethos:
+All presenters demonstrate comfort with uncertainty and process-oriented research. The toilet theory presenter's admission "I don't know what's next, to be honest" is met with supportive suggestions rather than criticism, indicating a community that values exploration over predetermined outcomes.
+
+Technical Limitations as Creative Constraints:
+Each project encounters and works with technical limitations - from training data challenges to API failures to local software setup difficulties. The presenters frame these not as failures but as generative constraints that lead to unexpected discoveries.
+
+Audience as Collaborative Thinkers:
+The audience consistently offers substantive technical and conceptual contributions rather than simple questions. Their interventions reveal deep engagement with both the technical and philosophical dimensions of the work, suggesting a community of practice rather than a traditional presentation format.
+
+Cultural Critique Through Technical Practice:
+All projects use AI experimentation as a vehicle for broader cultural commentary - whether critiquing academic discourse, analyzing popular culture trends, or questioning anthropocentric approaches to intelligence. The technical work serves philosophical and critical ends rather than purely instrumental ones.
 
 
 
