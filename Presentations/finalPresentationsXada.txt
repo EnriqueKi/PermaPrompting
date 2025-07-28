@@ -1,5 +1,9 @@
 Permaprompting Summer School: Project Presentations Summary
+
+
 Project 1: Pollinator Garden Simulation Game
+
+
 Core Concept: AI-Powered Ecological Gaming
 Historical Integration + Modern Technology:
 •	Medieval Plant Knowledge: Using historical data about plants used for disease treatment in Middle Ages
@@ -31,7 +35,11 @@ Development Challenges:
 •	Scope Management: Focused on core concept rather than expanding features
 •	Sound Design: Evolved from "dramatic" Bumblebee music to more "romantic" soundtrack
  
+
+
 Project 2: Invasive Species Cultural Integration Through Prague Legends
+
+
 Conceptual Framework: Cultural Naturalization
 Core Research Question:
 •	Temporal Integration: How many generations needed for invasive species to become "citizens"?
@@ -83,7 +91,6 @@ Unrealized Potential:
 •	Interactive Agent: Originally planned comprehensive agent for location-based species recommendations
 •	Quality Refinement: Visual outputs need significant improvement for public presentation
 •	Expanded Coverage: More species and legends could be integrated with additional time
- 
 Cross-Project Themes & Insights:
 AI as Cultural Mediator:
 •	Both projects use AI to bridge different knowledge systems (historical/contemporary, scientific/cultural)
@@ -102,4 +109,7 @@ Educational Applications:
 •	Interactive elements engage users in ecological thinking
 •	Cultural integration makes environmental concepts more accessible and memorable
 These presentations demonstrate innovative approaches to using AI for ecological education and cultural integration, while also revealing important limitations and challenges in current AI-assisted creative processes.
+
+
+
 
