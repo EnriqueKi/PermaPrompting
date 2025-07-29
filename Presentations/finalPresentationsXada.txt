@@ -303,4 +303,116 @@ The project represents a sophisticated integration of scientific methodology, ar
 
 -----
 
+Final Session & Closing - Extended Version
+Musical Interlude & Technical Challenges
+Volcanic Pop Song Presentation:
+The session begins with attempts to play the volcanic-themed pop song created earlier, with evident technical difficulties and community support:
+
+Technical Struggles: "It's always cool, I always like FBI's. I think all they do is sit here, and I think, why not him? So I really get the reaction. So can we use the next?"
+
+Community Appreciation: "It was really amazing. Thank you so much for accepting me, having me."
+
+Presenter's Humble Response: "What do you mean accepting you? Thank you so much for taking part of... You know I wiggled my way in."
+
+Organizer's Genuine Appreciation: "I mean it's really good. And you know that it was really good that you were here. And I felt that you really... You really have contributed a lot and you know right? I mean that's super obvious."
+
+Song Playback & Community Response:
+When the song finally plays, there's evident excitement and appreciation from the group, with discussions about the creative process and AI-generated lyrics influenced by volcanic personas.
+
+Audience Engagement: "And then it's kind of sweet that the lyrics are influenced by the persona of the band, the band's about that. And then there's also kind of like a little prompt where you get the song description that is then meant for the lyrics and the song."
+
+Project 4: Automotive Design AI Strategy
+Presenter's Technical Framework:
+Doctoral Research Context: The presenter begins with clear academic positioning: "Hello ladies and gentlemen, I now show you my workflow which was made in start of my dissertation works, that are doctoral studies and my workflow was to design such a mixed-rump product, where my intention was to train my AI agent on that of databases of literature, history, and I visualized different industries, lifestyle, car objects, where from these fields is created design strategy for transportation for short also cars generally."
+
+Visionary AI Agent Creation: "And my intention was then to visualize from this design strategy the design and that's my idea that it give me some visual base for further development... I asked the ChatGPT if she take over, give me some tips on some interests in the literature. And that was my imagination like that how will be think that AI as in the role of some visionary."
+
+Dr. Zara Ross Character: With evident pride in the creative process: "And from this text I made text. And then I put that text prompt into my, into most using in our days text of generating AI model for designers... And I, I want to see how will be think and but the result wasn't great because it's still conventional, very, very conventional."
+
+Creative Limitations & Frustrations:
+Literary Inspiration Attempts: "The, for example, there's like always, there's main input was that if she is inspired by Karel Čapek and on this novel it's, if it's right with story. And the main whole design strategy, well, the result is bottom. It's not great. It's, I was being so average stuff."
+
+Conventional Output Problem: With evident disappointment: "I tried to write there futuristic BMW, we were in Carrickster and she'll still give me the same average, average result... I want to find something with different proportions, different surfaces. But that's not possible to give me this stuff."
+
+Technical Analysis: "But my conclusion is that it's above all because this model is, this one is, this is a model. This one is a model of general data from automotive. I think the next way can be that learn to configure UI."
+
+Audience Technical Support & Advice:
+Methodological Suggestions: Audience Member: "Maybe, maybe. If you have, from your experience looking our method as far as that, I think looking our method is much easier. If you, if you gave this propose mention, then it would be very expectable a little. But maybe to mind, to really like it, like if that some, description of something and maybe make some... And maybe, somehow try DALL-E model."
+
+Statistical Understanding of AI: Technical Expert in Audience: "You also mentioned something now, in the last conference, that you guys have changed the opening settings... That's what I tried. You put that in the comps, like, you know, really bizarre countries. Also, like, the individual and minor figures, you know, as it works as a statistic, it gives you what it's mostly used for. So you have to try to see, like, it's trained on common data, and most of the common data is very shallow."
+
+Creative Prompting Strategies: "So if you want some infertility, or you have to see, give me something, but it's not very well, or it's artificial, or it's not very good. It's like very minor, you know, point of view, or something, point of action, something was made. To try to, like, take it from different sides. Like, you are the one who is inserting something fake into the comps, and then maybe you'll get something. You have to really be patient."
+
+Vector Mathematics Explanation: Technical Audience Member: "You see, in AI comes, like, Professor mentioned about statistics, right? It's basically when you ask something. The foundational models were created mathematically based on vectors, if you go deeper. Vectors understand zeros and ones. So when we are doing image processing, everything that we ask goes into a vector array, and then it returns a result. The problem with zeros and ones is, it is either this or that."
+
+Training Methodology Advice: "If you start training this model, not by vector, but let's say a different classification. So let's say linear regression, you know, where multiple things are there, and then the repetitions are, you know, identified... If you start with, let's say, identifying a model with a DALL-E, and then train a little bit with abstraction, then instead of vector going and coming back, giving you one result, it will give you a much wider view."
+
+Creative Process Integration:
+Hybrid Methodology Suggestion: Audience Member: "One thing, Fred, because I think it's quite interesting what you presented, because also in the research that we're doing for creative, I think the one key thing that we found out is we created these kind of templates where we basically stack the whole, the steps. So rather than going from image to phone, there is like even like conventional brainstorming methodologies that have an AI route, but also a human route."
+
+Collaborative Innovation Approach: "And by taking these steps and having it like in different moments, in different times, we allow the opportunity to get new stuff, and at the same time, you also reflect it with what you as a potential designer would do. And by combining those insights, you can find these things that you wouldn't have thought of, but also the AI wouldn't have thought of."
+
+Closing Interactive Experience: Collaborative Pong
+Organizer's Conceptual Framework:
+Historical Reference & Vision: The organizer introduces the final interactive piece with evident excitement: "It was very much a gimmick and a historical reference trying to bring up together many of the threads that we have been discussing here. When all this starting, I was telling you about these ideas about common prompting, how do we come back together and use AI systems... And I started with this kind of reference to Lauren Carpenter, which is one of the creators or the people that later went on to create Pixar."
+
+Original Pong Experiment: "And how one of the early experiments with, one of the early experiments with machine automation, they got a bunch of people in a theater and they asked them to show, and they gave each one a ping pong racket. And on one side it was green and on the other side, it was red, and then they used that to control a game of pong."
+
+Political Technology Vision: With philosophical depth: "And it was this idea of technology as a mediator that is capable, if technology is advanced enough, sufficiently sophisticated, it might be able to even kind of substitute political processes, because suddenly, if it is emergent, the best configuration, the best social configuration is kind of emergent."
+
+Gratitude & Acknowledgments:
+Deep Appreciation for Denisa: "So I started playing with that idea and discussing with Denisa and discussing with Ramon, to whom I would like to also thank very much for taking part in the conference in this summer school. Denisa, I know you don't, I know you don't, Denisa, but you need to be acknowledged because the reason why the summer school is happening is also very much because of you. So thank you so much for taking the time for this."
+
+Technical Support Recognition: "Also, also there were times in which we were deciding which platforms to use, with the small agents, et cetera, et cetera, and yesterday you also were so helpful in bringing it back in a technical sense for us to have a bunch of ideas. So thank you for that too."
+
+Ramon's Contribution: "And also Ramon, thank you so much... Thank you so much because we met not that long ago in this conference, so your kindness also inviting us to the conference, and also you coming here and actually staying here and bringing out these different, such different perspectives."
+
+Live Interactive Experience:
+Embodied Technology Experiment: "So what I created after our conversation seems exactly the same idea, but instead of people controlling the puddles and the ball representing some metaphor of reality or whatever it was, what I have created is a pong in which we somehow control the ball."
+
+Uncertain but Enthusiastic Implementation: With honest vulnerability: "So I don't know how it works because, because I really don't know how it works. We should be able to recognize our skeleton here. Or maybe not. Or maybe not. Maybe it's not even recognizing shit, but, but basically if we were to stand up, if we were to stand up and move with a broom, there's a, eh, it's recognizing somebody."
+
+Collective Embodied Play: The group engages in the interactive experience with music, movement, and collective problem-solving, creating a moment of genuine community engagement and shared discovery.
+
+Metaphorical Explanation: "So, Marquette, does anyone want to say something? Well, it was very much what we have been talking so much, also with Aneta and Marquette... Each one of the, whenever you saw the, when you see this one, when you see the icon, the icon gives you a clue on what, as a group of people there, we could do so it accelerates or goes slower."
+
+Embodied Collective Intelligence: "The puddles are controlled by some kind of activity formation, the creature that goes in there, and then it's our bodies in the space doing something to know how to navigate this space in which we are heard, like moved around and heard. So, if you see a tree, maybe you can think we should come together. If you see a star that they are quite separated, maybe we should come separated."
+
+Future Planning & Repository Creation
+Institutional Gratitude:
+Organizer's Appreciation: "This is where we were going to. Like, thank you so much to ABU and especially thank you so much, Marqueta and the Doctor of Studies department. More than the Doctor of Studies department. Yes. The Doctor of Studies department for hosting us here and in the other building. We had a whole building with a kitchen with three rooms for all these days and that was fantastic."
+
+Digital Archive Creation:
+Repository Introduction: "Because as we were mentioning before and if I can show you I can remove my shitty stuff and if I can show you Marqueta do we have them? Yes so first things first I have created a repository and this repository is called Therma prompting and it's under my handle because I thought this would be the easiest way to go about it."
+
+AI-Assisted Documentation: "I also made an agent, proto agent. I made a proto agent in Ada and I was taking the notes and then hitting enter and then it would create more notes and then it would relate to a notes before so I have also dropped the notes here. It's endless but you will find all your names in there. And it will it will it will talk about you because of all the talks during the presentations and stuff."
+
+Future Exhibition Planning:
+Ars Biologica Integration: "We have the Ars Biologica summer school second part... And those three more tracks are gonna take place from the 21st to the 24th of August in Budweis. And they will culminate in an event that lasts for a whole day, in what we are calling the Ars Biologica pavilion, where all the tracks will exhibit the outcomes of the work that they have been doing."
+
+Collaborative Exhibition Vision: "And I would be very happy to, if you join me there, to present our, because we will have our own slot within this event, within the pavilion. So in terms of the format, how do we represent or show or share what happened here these days? Should we use an agent in the time?"
+
+Musical Closing: Mononeon Discovery
+Cultural Sharing & Connection:
+The session concludes with the organizer sharing a musical discovery that embodies the themes of the summer school:
+
+Bass Player as AI Metaphor: "So this guy, and we can talk about him for hours, is called Mononeon... This person is a bass player that does something that I don't know... And they went to a concert and this person was able to make people react emotionally just with the bass. So he would do things and suddenly everyone would start laughing around me."
+
+AI-Like Musical Practice: "And this Mononeon does the same, but with videos of people talking. So he goes, if you follow him on Instagram, he has videos of someone talking, like Trump talking to someone. But he grabs the bass and he starts making the sounds of Trump talking. So it's, I mean, for me it's even better."
+
+Community Reflection & Themes:
+Intensive Collaborative Experience:
+The closing reveals the depth of community that emerged over four intensive days, with genuine appreciation for sustained engagement and creative risk-taking.
+
+Technical Vulnerability as Strength:
+Throughout the final session, technical difficulties and uncertainties are met with community support and collaborative problem-solving, suggesting a research culture that values process over polished outcomes.
+
+Embodied Collective Intelligence:
+The final interactive pong experience serves as a perfect metaphor for the entire summer school - bodies in space, working together through technology, discovering emergent behaviors and collective capabilities.
+
+Future-Oriented Community Building:
+The careful attention to documentation, repository creation, and future exhibition planning demonstrates commitment to sustaining the collaborative relationships and continuing the experimental work beyond the summer school timeframe.
+
+The session concludes with a sense of genuine community accomplishment, technical innovation through constraint, and excitement for continued collaboration and experimentation.
+
 
