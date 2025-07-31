@@ -1,0 +1,5 @@
+__pycache__/*
+.DS_Store
+*.pyc
+__pycache__/chromatography_analyzer.cpython-312.pyc
+.env

@@ -1,0 +1,237 @@
+{
+  "additional_regions": {
+    "region_3": {
+      "angular_coverage": 360.0,
+      "area_cm2": 52.415166233272274,
+      "color": {
+        "blue": 57.610563679364745,
+        "green": 82.33716145924653,
+        "red": 112.83673091684102
+      },
+      "contrast": 245.66666666666666,
+      "mean_intensity": 84.26148535181746,
+      "mean_radius_cm": 4.837933669100879,
+      "thickness_cm": 2.6576394502829426,
+      "width_cm": 1.3448288437761535,
+      "zone_full_name": "Region 4"
+    },
+    "region_4": {
+      "angular_coverage": 360.0,
+      "area_cm2": 26.42253077927994,
+      "color": {
+        "blue": 200.4788605569683,
+        "green": 198.04514256564048,
+        "red": 200.14927074718463
+      },
+      "contrast": 253.66666666666666,
+      "mean_intensity": 199.55775795659778,
+      "mean_radius_cm": 5.852732515112629,
+      "thickness_cm": 0.889248181083266,
+      "width_cm": 0.677929387067032,
+      "zone_full_name": "Region 5"
+    }
+  },
+  "analysis_parameters": {
+    "filename": "soilchromatographyC2_back_smaller_large.jpeg",
+    "n_regions": 5,
+    "paper_diameter_cm": 12.5,
+    "segmentation_method": "fcm_approx"
+  },
+  "center": [
+    614,
+    625
+  ],
+  "radial_analysis": {
+    "channel_development": {
+      "avg_channel_length_cm": 0.07236165209083562,
+      "avg_continuity": -64.90201812919936,
+      "channel_density": 5.699481865284974,
+      "total_channels": 2200
+    },
+    "directional_patterns": {
+      "dominant_direction_degrees": 112.47083225304641,
+      "intensity_asymmetry": 0.02503409427375591,
+      "symmetry_score": 0.9599763462659432
+    },
+    "radial_uniformity": {
+      "development_extent_cm": 1.8896523848019402,
+      "radial_consistency": 0.8285568893062608,
+      "radial_smoothness": 0.22877401478043138
+    },
+    "spike_development": {
+      "avg_spike_intensity": 63.86216735839844,
+      "spike_density": 30.685778807346345,
+      "total_spikes": 7267
+    }
+  },
+  "radial_features": {
+    "channel_development": {
+      "avg_channel_intensity": 119.06111907958984,
+      "avg_channel_length_cm": 0.07236165209083562,
+      "avg_continuity": -64.90201812919936,
+      "channel_density": 5.699481865284974,
+      "channel_length_std": 0.028998302287666682,
+      "max_channel_length_cm": 0.2526273241713824,
+      "total_channels": 2200
+    },
+    "directional_patterns": {
+      "development_asymmetry": 0.08134214021725869,
+      "dominant_direction_degrees": 112.47083225304641,
+      "intensity_asymmetry": 0.02503409427375591,
+      "sector_analysis": [
+        {
+          "angle_range": [
+            0.0,
+            44.98833290121856
+          ],
+          "development_pixels": 167561,
+          "intensity_std": 52.346103288890326,
+          "mean_intensity": 138.01594198980902
+        },
+        {
+          "angle_range": [
+            44.98833290121856,
+            89.97666580243713
+          ],
+          "development_pixels": 168152,
+          "intensity_std": 52.225464113866266,
+          "mean_intensity": 137.39777258166976
+        },
+        {
+          "angle_range": [
+            89.97666580243713,
+            134.96499870365568
+          ],
+          "development_pixels": 170255,
+          "intensity_std": 53.80261179345105,
+          "mean_intensity": 140.639483963399
+        },
+        {
+          "angle_range": [
+            134.96499870365568,
+            179.95333160487425
+          ],
+          "development_pixels": 159081,
+          "intensity_std": 53.782813087006744,
+          "mean_intensity": 138.58528525281469
+        },
+        {
+          "angle_range": [
+            179.95333160487425,
+            224.94166450609282
+          ],
+          "development_pixels": 149572,
+          "intensity_std": 53.64213382687541,
+          "mean_intensity": 134.23988673685918
+        },
+        {
+          "angle_range": [
+            224.94166450609282,
+            269.92999740731136
+          ],
+          "development_pixels": 132846,
+          "intensity_std": 54.296392670882895,
+          "mean_intensity": 129.29537283576843
+        },
+        {
+          "angle_range": [
+            269.92999740731136,
+            314.91833030852996
+          ],
+          "development_pixels": 143192,
+          "intensity_std": 60.35680261876846,
+          "mean_intensity": 132.77603497911795
+        },
+        {
+          "angle_range": [
+            314.91833030852996,
+            359.9066632097485
+          ],
+          "development_pixels": 164624,
+          "intensity_std": 58.12544220009495,
+          "mean_intensity": 136.11118169408138
+        }
+      ],
+      "symmetry_score": 0.9599763462659432
+    },
+    "radial_uniformity": {
+      "development_extent_cm": 1.8896523848019402,
+      "profile_variance_mean": 534.5769754468773,
+      "profile_variance_std": 1269.0808402336754,
+      "radial_consistency": 0.8285568893062608,
+      "radial_smoothness": 0.22877401478043138
+    },
+    "spike_development": {
+      "avg_spike_intensity": 63.86216735839844,
+      "spike_clustering": {
+        "avg_nearest_neighbor_distance": 0.04511093708348524,
+        "clustering_coefficient": 0.6462833623743086
+      },
+      "spike_density": 30.685778807346345,
+      "spike_radial_distribution": {
+        "angular_uniformity": 0.8628868142711379,
+        "preferred_radius": 0.34076619060450913,
+        "radial_uniformity": 0.34292479101413686
+      },
+      "total_spikes": 7267
+    }
+  },
+  "success": true,
+  "summary": {
+    "average_radius_cm": 3.204972290827662,
+    "paper_diameter_cm": 12.5,
+    "resolution_pixels_per_cm": 98.96,
+    "total_area_cm2": 241.82357471625687,
+    "total_zones": 5
+  },
+  "zones": {
+    "CZ": {
+      "angular_coverage": 360.0,
+      "area_cm2": 31.093583453853793,
+      "color": {
+        "blue": 74.26674701643996,
+        "green": 111.37658537546551,
+        "red": 139.1249942529113
+      },
+      "contrast": 179.0,
+      "mean_intensity": 108.25610888160558,
+      "mean_radius_cm": 0.3958038033151092,
+      "thickness_cm": 1.0509296685529508,
+      "width_cm": 0.7977757372552168,
+      "zone_full_name": "Central zone",
+      "zone_name": "CZ"
+    },
+    "MZ": {
+      "angular_coverage": 360.0,
+      "area_cm2": 64.29937232423347,
+      "color": {
+        "blue": 110.97628829469785,
+        "green": 163.800020327495,
+        "red": 195.0369341055664
+      },
+      "contrast": 104.00000000000001,
+      "mean_intensity": 156.60441424258642,
+      "mean_radius_cm": 1.6255214863076735,
+      "thickness_cm": 2.0715440582053355,
+      "width_cm": 1.649744849677507,
+      "zone_full_name": "Median zone",
+      "zone_name": "MZ"
+    },
+    "OZ": {
+      "angular_coverage": 360.0,
+      "area_cm2": 67.59292192561738,
+      "color": {
+        "blue": 83.28513784419505,
+        "green": 122.624227463694,
+        "red": 154.0390562329385
+      },
+      "contrast": 162.33333333333331,
+      "mean_intensity": 119.98280718027584,
+      "mean_radius_cm": 3.3128699803020187,
+      "thickness_cm": 4.072352465642684,
+      "width_cm": 1.7342482638732422,
+      "zone_full_name": "Outer zone",
+      "zone_name": "OZ"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+You are an expert chromatographer analyzing computational results from a chromatography image analysis system. Please provide a comprehensive interpretation and assessment based on the following data:
+
+## COMPUTATIONAL ANALYSIS DATA
+
+### Analysis Overview:
+- Analysis Status: {status}
+- Segmentation Method: {method}
+- Center Coordinates: {center}
+- Total Zones Detected: {zones_count}
+
+### Zone-by-Zone Analysis:
+{zones_data}
+
+### Overall Statistics:
+{summary_data}
+
+## ANALYSIS REQUEST
+
+Based on this computational data, please provide a comprehensive chromatography analysis report covering:
+
+### 1. SEPARATION QUALITY ASSESSMENT
+- Evaluate the separation effectiveness based on zone sizes and positioning
+- Assess zone distribution and spacing
+- Comment on resolution between adjacent zones
+
+### 2. TECHNICAL PERFORMANCE EVALUATION
+- Analysis of zone characteristics (size, shape, intensity)
+- Assessment of method efficiency based on detected parameters
+- Identification of any anomalies or irregular patterns
+
+### 3. QUANTITATIVE INSIGHTS
+- Interpretation of area measurements and their chromatographic significance
+- Analysis of intensity patterns and what they indicate
+- Assessment of zone thickness and angular coverage patterns
+
+### 4. METHOD OPTIMIZATION RECOMMENDATIONS
+- Suggestions for improving separation based on the data
+- Recommendations for method parameters adjustment
+- Identification of potential issues and solutions
+
+### 5. QUALITY CONTROL ASSESSMENT
+- Evaluation of result reliability based on computational metrics
+- Assessment of data consistency across zones
+- Identification of any red flags or concerning patterns
+
+### 6. PRACTICAL IMPLICATIONS
+- What these results mean for the analytical method
+- Suitability for intended analytical purpose
+- Recommendations for next steps
+
+Please provide specific, actionable insights based on the computational data provided. Focus on interpreting the numerical results in the context of chromatographic theory and practice.

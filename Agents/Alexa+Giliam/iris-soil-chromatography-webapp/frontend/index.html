@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chromatography Analysis Tool</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: black;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Image Grid Background */
+      .image-grid {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200vh; /* Double height for seamless loop */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1px;
+        padding: 1px;
+        animation: scrollUp 30s linear infinite;
+        z-index: 1;
+      }
+
+      .image-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        filter: grayscale(50%);
+        transition: filter 0.3s ease;
+      }
+
+      .image-grid img:hover {
+        filter: grayscale(0%);
+      }
+
+      @keyframes scrollUp {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50%);
+        }
+      }
+
+      /* Upload Button Container */
+      .upload-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        text-align: center;
+      }
+
+      .upload-button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 50px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        backdrop-filter: blur(10px);
+      }
+
+      .upload-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.6);
+        background: black;
+      }
+
+      #file-input {
+        display: none;
+      }
+
+      /* Analysis overlay for when analysis is running */
+      .analysis-overlay {
+        position: fixed;
+        background: transparent;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .analysis-content {
+        border-radius: 20px;
+        background: black;
+        padding: 40px;
+        max-width: 90%;
+        max-height: 90%;
+        overflow-y: auto;
+        position: relative;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+      }
+
+      .close-button:hover {
+        color: #333;
+      }
+
+      /* Loading animation */
+      .loading {
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 2500;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loading-content {
+        max-width: 80%;
+        max-height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .loading-image {
+        max-width: 100%;
+        max-height: 60vh;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        object-fit: contain;
+      }
+
+      .spinner {
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid white;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Error message */
+      .error-message {
+        background: #ff4444;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px;
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3000;
+      }
+
+      /* Feral Popup Styles - More Aggressive */
+      .feral-popup {
+        position: fixed;
+        z-index: 10000;
+        background: white(0, 0, 0, 0.95);
+        color: black;
+        padding: 20px 30px;
+        border-radius: 15px;
+        font-family: "Arial", monospace;
+        font-size: 18px;
+        font-weight: bold;
+        max-width: 450px;
+        min-width: 200px;
+        word-wrap: break-word;
+        pointer-events: none;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        border: 3px solid;
+        animation-fill-mode: forwards;
+      }
+
+      .feral-popup.composted {
+        background: rgba(139, 69, 19, 0.95);
+        border-color: #ff6b35;
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        box-shadow: 0 10px 40px rgba(139, 69, 19, 0.8),
+          0 0 20px rgba(255, 107, 53, 0.6);
+      }
+
+      .feral-popup.dissociating {
+        background: rgba(105, 105, 105, 0.95);
+        border-color: #d3d3d3;
+        font-size: 17px;
+        letter-spacing: 2px;
+        font-style: italic;
+        box-shadow: 0 10px 40px rgba(105, 105, 105, 0.8),
+          0 0 20px rgba(211, 211, 211, 0.6);
+      }
+
+      .feral-popup.becoming {
+        background: rgba(34, 139, 34, 0.95);
+        border-color: #90ee90;
+        font-size: 19px;
+        letter-spacing: 1px;
+        box-shadow: 0 10px 40px rgba(34, 139, 34, 0.8),
+          0 0 20px rgba(144, 238, 144, 0.6);
+      }
+
+      .feral-popup.composed {
+        background: rgba(72, 61, 139, 0.95);
+        border-color: #9370db;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-shadow: 0 10px 40px rgba(72, 61, 139, 0.8),
+          0 0 20px rgba(147, 112, 219, 0.6);
+      }
+
+      @keyframes aggressiveFadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.3) rotate(-15deg) translateY(-100px);
+        }
+        50% {
+          opacity: 0.8;
+          transform: scale(1.1) rotate(5deg) translateY(0);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg) translateY(0);
+        }
+      }
+
+      @keyframes aggressiveFloat {
+        0%,
+        100% {
+          transform: scale(1) rotate(0deg) translateY(0);
+        }
+        25% {
+          transform: scale(1.05) rotate(2deg) translateY(-10px);
+        }
+        50% {
+          transform: scale(0.98) rotate(-1deg) translateY(5px);
+        }
+        75% {
+          transform: scale(1.02) rotate(1deg) translateY(-5px);
+        }
+      }
+
+      @keyframes aggressiveFadeOut {
+        0% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.5) rotate(10deg) translateY(50px);
+        }
+      }
+
+      @keyframes aggressivePulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 15px 50px rgba(255, 0, 0, 0.6);
+        }
+      }
+
+      /* Image container for positioning overlay */
+      .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      /* Claude Analysis Integrated Styles */
+      .claude-analysis-section {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background: rgba(248, 249, 255, 0.95);
+        border-radius: 10px 0 10px 0;
+        overflow: hidden;
+      }
+
+      .claude-analysis-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 8px 12px;
+        font-size: 0.9em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .claude-analysis-content {
+        color: #333;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        padding: 12px;
+        height: calc(100% - 40px);
+        overflow-y: auto;
+        line-height: 1.4;
+        font-size: 12px;
+      }
+
+      .claude-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 40px);
+        padding: 12px;
+      }
+
+      .claude-spinner {
+        border: 2px solid rgba(102, 126, 234, 0.3);
+        border-radius: 50%;
+        border-top: 2px solid #667eea;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin-bottom: 10px;
+      }
+
+      .claude-loading-text {
+        color: #667eea;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      @keyframes slideInUp {
+        from {
+          transform: translate(-50%, 100%);
+          opacity: 0;
+        }
+        to {
+          transform: translate(-50%, -50%);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Image Grid -->
+    <div class="image-grid" id="image-grid"></div>
+
+    <!-- Upload Button in Center -->
+    <div class="upload-container">
+      <button
+        class="upload-button"
+        onclick="document.getElementById('file-input').click()"
+      >
+        Upload your sample
+      </button>
+      <input
+        type="file"
+        id="file-input"
+        accept="image/*"
+        onchange="handleFileSelect(event)"
+      />
+    </div>
+
+    <!-- Analysis Overlay -->
+    <div class="analysis-overlay" id="analysis-overlay">
+      <div class="analysis-content" id="analysis-content">
+        <button class="close-button" onclick="closeAnalysis()">×</button>
+        <div id="analysis-results"></div>
+      </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading" id="loading" style="display: none">
+      <div class="loading-content">
+        <img
+          id="loading-image"
+          class="loading-image"
+          style="display: none"
+          alt="Uploaded chromatogram"
+        />
+        <div class="spinner"></div>
+        <div>Analyzing your chromatogram...</div>
+      </div>
+    </div>
+
+    <!-- Error message -->
+    <div class="error-message" id="error-message"></div>
+
+    <script>
+      const API_BASE_URL = "http://localhost:8080";
+
+      // Image list from the images folder
+      const images = [
+        "images/BottomRight.png",
+        "images/Bottomleft.png",
+        "images/Midleft.png",
+        "images/Midright.png",
+        "images/Topleft.png",
+        "images/Topright.png",
+        "images/b2bottomleft.png",
+        "images/b2bottomright.png",
+        "images/b2midleft.png",
+        "images/b2midright.png",
+        "images/b2topleft.png",
+        "images/b2topright.png",
+      ];
+
+      // Create infinite grid of images
+      function createImageGrid() {
+        const grid = document.getElementById("image-grid");
+        const gridSize = 100; // Total number of images to show
+
+        for (let i = 0; i < gridSize; i++) {
+          const img = document.createElement("img");
+          img.src = images[i % images.length];
+          img.alt = "Chromatography sample";
+          grid.appendChild(img);
+        }
+      }
+
+      // Initialize grid on page load
+      createImageGrid();
+
+      function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (file) {
+          analyzeImage(file);
+        }
+      }
+
+      async function analyzeImage(file) {
+        const analysisOverlay = document.getElementById("analysis-overlay");
+        const analysisResults = document.getElementById("analysis-results");
+        const loading = document.getElementById("loading");
+        const loadingImage = document.getElementById("loading-image");
+        const errorMessage = document.getElementById("error-message");
+
+        // Create a URL for the uploaded file to display it
+        const imageUrl = URL.createObjectURL(file);
+        loadingImage.src = imageUrl;
+        loadingImage.style.display = "block";
+
+        // Show loading
+        loading.style.display = "flex";
+        errorMessage.style.display = "none";
+        analysisOverlay.style.display = "none";
+
+        try {
+          // Prepare form data
+          const formData = new FormData();
+          formData.append("file", file);
+
+          // Send request to backend
+          const response = await fetch(`${API_BASE_URL}/analyze`, {
+            method: "POST",
+            body: formData,
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            // Hide loading immediately when results are ready
+            loading.style.display = "none";
+            // Clean up the object URL to free memory
+            URL.revokeObjectURL(imageUrl);
+            loadingImage.style.display = "none";
+
+            // Display results
+            displayResults(result);
+            analysisOverlay.style.display = "flex";
+
+            // Call Claude analysis endpoint separately in the background
+            try {
+              // Show loading spinner for Claude analysis
+              showClaudeAnalysisLoading();
+
+              const claudeAnalysis = await getClaudeAnalysis(result);
+              if (claudeAnalysis && claudeAnalysis.analysis) {
+                displayClaudeAnalysisOverlay(claudeAnalysis.analysis);
+
+                // Call Feral analysis endpoint with Claude analysis data
+                try {
+                  const feralAnalysis = await getFeralAnalysis(claudeAnalysis);
+                  if (
+                    feralAnalysis &&
+                    feralAnalysis.utterances &&
+                    Array.isArray(feralAnalysis.utterances)
+                  ) {
+                    displayFeralPopups(
+                      feralAnalysis.utterances,
+                      feralAnalysis.health_score || 0.5 // Default health score if not provided
+                    );
+                  }
+                } catch (feralError) {
+                  console.error("Feral analysis failed:", feralError);
+                }
+              } else if (claudeAnalysis && claudeAnalysis.error) {
+                console.error("Claude analysis error:", claudeAnalysis.error);
+                displayClaudeAnalysisOverlay(
+                  "⚠️ AI Analysis Failed\n\nCouldn't generate AI insights for your chromatography results."
+                );
+              } else {
+                displayClaudeAnalysisOverlay(
+                  "🤖 AI Analysis\n\nNo AI analysis available for this result."
+                );
+              }
+            } catch (claudeError) {
+              console.error("Claude analysis failed:", claudeError);
+              displayClaudeAnalysisOverlay(
+                `⚠️ AI Analysis Failed\n\nCouldn't generate AI insights for your chromatography results.\n\nError: ${
+                  claudeError.message || "Unknown error"
+                }`
+              );
+            }
+          } else {
+            showError(
+              result.message ||
+                result.error ||
+                "Analysis failed. Please try again."
+            );
+          }
+        } catch (error) {
+          console.error("Analysis error:", error);
+          showError(
+            "Failed to connect to the analysis server. Please make sure the backend is running on port 8080."
+          );
+        } finally {
+          // Only hide loading if it's still visible (in case of errors)
+          if (loading.style.display !== "none") {
+            loading.style.display = "none";
+            // Clean up the object URL to free memory
+            URL.revokeObjectURL(imageUrl);
+            loadingImage.style.display = "none";
+          }
+        }
+      }
+
+      async function getClaudeAnalysis(analysisResults) {
+        try {
+          const response = await fetch(`${API_BASE_URL}/claude/analyze`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              analysis_results: analysisResults,
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error(`Claude API error: ${response.status}`);
+          }
+
+          const claudeResult = await response.json();
+
+          if (claudeResult.success) {
+            return claudeResult.claude_analysis;
+          } else {
+            throw new Error(claudeResult.message || "Claude analysis failed");
+          }
+        } catch (error) {
+          console.error("Claude analysis error:", error);
+          throw error;
+        }
+      }
+
+      async function getFeralAnalysis(claudeAnalysisData) {
+        try {
+          const response = await fetch(`${API_BASE_URL}/claude/feral`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              claude_analysis_data: claudeAnalysisData,
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error(`Feral API error: ${response.status}`);
+          }
+
+          const feralResult = await response.json();
+
+          // The API now returns the JSON directly with utterances field
+          if (feralResult.utterances && Array.isArray(feralResult.utterances)) {
+            return feralResult;
+          } else {
+            throw new Error(
+              "Invalid feral analysis format - missing utterances array"
+            );
+          }
+        } catch (error) {
+          console.error("Feral analysis error:", error);
+          throw error;
+        }
+      }
+
+      function displayResults(results) {
+        const resultsContainer = document.getElementById("analysis-results");
+        resultsContainer.innerHTML = "";
+
+        // Show visualization if available
+        if (results.visualization) {
+          // Create image container for positioning
+          const imageContainer = document.createElement("div");
+          imageContainer.className = "image-container";
+
+          const img = document.createElement("img");
+          img.src = results.visualization;
+          img.style.width = "100%";
+          img.style.height = "auto";
+          img.style.borderRadius = "10px";
+          img.style.display = "block";
+
+          imageContainer.appendChild(img);
+          resultsContainer.appendChild(imageContainer);
+        }
+
+        // Zone details
+        if (results.zones) {
+          const zonesDiv = document.createElement("div");
+          zonesDiv.innerHTML = "<h3>Zone Details</h3>";
+
+          Object.entries(results.zones).forEach(([zoneKey, zoneData]) => {
+            const zoneDiv = document.createElement("div");
+            zoneDiv.style.marginBottom = "10px";
+            zoneDiv.innerHTML = `
+              <h4>Zone ${zoneKey} (${zoneData.zone_full_name})</h4>
+              <p>Area: ${zoneData.area_cm2?.toFixed(2)} cm²</p>
+              <p>Mean Radius: ${zoneData.mean_radius_cm?.toFixed(2)} cm</p>
+              <p>Thickness: ${zoneData.thickness_cm?.toFixed(2)} cm</p>
+            `;
+            zonesDiv.appendChild(zoneDiv);
+          });
+
+          resultsContainer.appendChild(zonesDiv);
+        }
+      }
+
+      function displayClaudeAnalysisOverlay(analysisText) {
+        // Find the image container within analysis results
+        const analysisResults = document.getElementById("analysis-results");
+        const imageContainer =
+          analysisResults.querySelector(".image-container");
+
+        if (!imageContainer) {
+          console.warn("No image container found for Claude analysis overlay");
+          return;
+        }
+
+        // Remove any existing Claude analysis section
+        const existingSection = imageContainer.querySelector(
+          ".claude-analysis-section"
+        );
+        if (existingSection) {
+          existingSection.remove();
+        }
+
+        // Create integrated analysis section positioned over the image
+        const analysisSection = document.createElement("div");
+        analysisSection.className = "claude-analysis-section";
+        analysisSection.innerHTML = `
+          <div class="claude-analysis-content">${analysisText}</div>
+        `;
+
+        // Append to the image container (positioned overlay)
+        imageContainer.appendChild(analysisSection);
+      }
+
+      function showClaudeAnalysisLoading() {
+        // Find the image container within analysis results
+        const analysisResults = document.getElementById("analysis-results");
+        const imageContainer =
+          analysisResults.querySelector(".image-container");
+
+        if (!imageContainer) {
+          console.warn("No image container found for Claude analysis loading");
+          return;
+        }
+
+        // Remove any existing Claude analysis section
+        const existingSection = imageContainer.querySelector(
+          ".claude-analysis-section"
+        );
+        if (existingSection) {
+          existingSection.remove();
+        }
+
+        // Create loading section
+        const loadingSection = document.createElement("div");
+        loadingSection.className = "claude-analysis-section";
+        loadingSection.innerHTML = `
+          <div class="claude-loading">
+            <div class="claude-spinner"></div>
+            <div class="claude-loading-text">Waiting for analysis...</div>
+          </div>
+        `;
+
+        // Append to the image container (positioned overlay)
+        imageContainer.appendChild(loadingSection);
+      }
+
+      function displayFeralPopups(utterances, healthScore) {
+        // Ensure utterances is an array
+        if (!Array.isArray(utterances)) {
+          console.warn("Utterances is not an array:", utterances);
+          return;
+        }
+
+        // Determine health category based on score
+        let healthCategory = "composed";
+        if (healthScore <= 0.25) {
+          healthCategory = "composted";
+        } else if (healthScore <= 0.5) {
+          healthCategory = "dissociating";
+        } else if (healthScore <= 0.75) {
+          healthCategory = "becoming";
+        }
+
+        // Create multiple waves of popups for more aggressive display
+        const waves = 3; // Number of popup waves
+
+        for (let wave = 0; wave < waves; wave++) {
+          utterances.forEach((utterance, index) => {
+            // Multiple popups per utterance with varying delays
+            setTimeout(() => {
+              createFeralPopup(utterance, healthCategory);
+            }, wave * 2000 + index * 300 + Math.random() * 400);
+
+            // Add extra popups for more aggressive effect
+            if (wave === 0) {
+              setTimeout(() => {
+                createFeralPopup(utterance, healthCategory);
+              }, index * 500 + Math.random() * 600 + 1000);
+            }
+          });
+        }
+
+        // Add delayed repeat popups for persistence
+        setTimeout(() => {
+          utterances.slice(0, 4).forEach((utterance, index) => {
+            setTimeout(() => {
+              createFeralPopup(utterance, healthCategory);
+            }, index * 800 + Math.random() * 500);
+          });
+        }, 8000);
+      }
+
+      function createFeralPopup(text, healthCategory) {
+        const popup = document.createElement("div");
+        popup.className = `feral-popup ${healthCategory}`;
+        popup.textContent = text;
+
+        // More aggressive positioning - can appear anywhere on screen
+        const maxWidth = window.innerWidth - 450; // Account for popup width
+        const maxHeight = window.innerHeight - 150; // Account for popup height
+
+        const x = Math.random() * Math.max(maxWidth, 100);
+        const y = Math.random() * Math.max(maxHeight, 100);
+
+        popup.style.left = x + "px";
+        popup.style.top = y + "px";
+
+        // Add aggressive pulsing effect for certain categories
+        if (
+          healthCategory === "composted" ||
+          healthCategory === "dissociating"
+        ) {
+          popup.style.animation +=
+            ", aggressivePulse 0.5s ease-in-out infinite alternate";
+        }
+
+        document.body.appendChild(popup);
+
+        // Longer duration for more persistence
+        setTimeout(() => {
+          if (popup.parentNode) {
+            popup.parentNode.removeChild(popup);
+          }
+        }, 8000); // Increased from 5000 to 8000ms
+      }
+
+      function closeAnalysis() {
+        document.getElementById("analysis-overlay").style.display = "none";
+      }
+
+      function showError(message) {
+        const errorDiv = document.getElementById("error-message");
+        errorDiv.textContent = message;
+        errorDiv.style.display = "block";
+        setTimeout(() => {
+          errorDiv.style.display = "none";
+        }, 5000);
+      }
+
+      // Test backend connection on page load
+      fetch(`${API_BASE_URL}/health`)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("✅ Backend connection successful:", data);
+        })
+        .catch((error) => {
+          console.warn(
+            "Cannot connect to backend API health endpoint, but API may still be functional"
+          );
+        });
+    </script>
+  </body>
+</html>
