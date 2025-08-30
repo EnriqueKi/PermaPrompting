@@ -1,4 +1,4 @@
-# PermaComputing Dithering Tools
+# PermaComputing Summerschool Dithering Tools
 
 Based on the work of Kris De Decker and Low Tech Magazine (https://github.com/lowtechmag/solar_v2). Utilities to batch dither / palette‑reduce images and videos in a "low‑tech-magazine" ordered Bayer style for size reduction and a consistent aesthetic. 
 
