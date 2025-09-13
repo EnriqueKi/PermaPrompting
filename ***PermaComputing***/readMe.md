@@ -4,13 +4,15 @@ https://pad.monoskop.org/p/Ars_Biologica_2025_-_ABIS_-_Permacomp
 
 ******        *****         ***         **         * 
 
-https://www.budejovice2028.eu/udalosti/ars-biologica-letni-skola-2025
+This summer school was organized by the Ars Biologica Independent Studies (ABIS) program within the Budweis – European Capital of Culture 2028 project: www.budejovice2028.eu
 
-https://www.budejovice2028.eu/novinky/ars-biologica-2025-umeni-veda-a-budoucnost-krajiny
+The ABIS program is co-directed by the Uroboros collective: www.collective.uroboros.design
 
-The Permacomputing Summer School, co-organized by the Ars Biologica Independent Study Program (ABIS) for Budweis – European Capital of Culture 2028, the Doctoral Research Department of the Academy of Fine Arts in Prague, and the Uroboros collective, brought together artists, designers, researchers, and students to engage with computational culture critically. Over four days, the program employed permaculture principles and permacomputing practices as generative frameworks, focusing on interdependence and contextual sensitivity rather than individual productivity and scale.
+Summer school participants: Michal Kuzerac, Enrique Encinas, Lucie Čermáková, Jojo Schütt, Lukáš Rolf, Yaryna
 
-The curriculum delved into various aspects of digital infrastructure, treating permacomputing as a creative lens for understanding alternatives to current high-abstraction digital technologies and their material and energy dependencies. Discussions challenged fundamental assumptions, such as whether computers should always be online and key themes included attuning to local contexts and histories, maximizing hardware lifespans, minimizing energy consumption, and emphasizing the reuse and repurposing of existing computational resources.
+The Permacomputing and Digital Infraestructures Summer School, organized in the context of the Ars Biologica Independent Study Program (ABIS) for Budweis – European Capital of Culture 2028 by the Uroboros collective, brought together artists, designers, researchers, and students to engage with computational culture critically. Over four days, the program employed permaculture principles and permacomputing practices as generative frameworks.
+
+The summer school program delved into various aspects of digital infrastructure, treating permacomputing as a creative lens for understanding alternatives to current high-abstraction digital technologies and their material and energy dependencies. Discussions challenged common understandings, such as whether computers should always be online and key themes included attuning to local contexts and histories, maximizing hardware lifespans, minimizing energy consumption, and emphasizing the reuse and repurposing of existing computational resources.
 
 Participants explored concepts of decentralization and local relevance, focusing on integrating technology with natural contexts, such as solar rhythms. Practical examples such as Low-Tech Magazine's solar-powered website, which operates on a "work when sunny" philosophy and uses static, lightweight designs for energy efficiency, were presented. The summer school also explored speculative projects, such as James Bridle's "Server Farm" and FutureEverything's "Compost Computer," which envision computing infrastructure aging, degrading, or growing like plants.
 
