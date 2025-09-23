@@ -17,7 +17,6 @@ Think of it as:
 - 🤖 **YOLO** for object detection (finding toilets and toilet-adjacent objects)
 - 👁️ **BLIP** for image captioning (describing what it sees in your bathroom)  
 - 🚽 **Custom GPT-2** fine-tuned on toilet theory texts for generating lavatorial commentary
-- 🎨 **Gradio** for a pretty web interface (so you can watch the magic happen)
 
 ## Features That Nobody Asked For
 
